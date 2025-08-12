@@ -1,0 +1,13 @@
+
+body {
+  padding-top: 50px; /* adjust to your .top-bar height */
+}
+
+.top-bar > .row {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030; /* Bootstrap navbar uses 1030, so this is good */
+  background-color: #212529; /* same as bg-dark */
+}

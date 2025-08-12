@@ -1,0 +1,34 @@
+.main-content {
+}
+
+
+/* Carousel section styling */
+.carousel-item img {
+  height: 700px; /* or whatever height you want */
+  object-fit: cover; /* crop instead of stretch */
+}
+
+/* Parallax section styling */
+.parallax {
+  background-image: url('https://www.rpskypool.com/assets/images/services/tiles-pool-chemicals.jpg'); /* Replace with your own */
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* To make the "reveal" feel stronger */
+.spacer {
+  min-height: 100vh; /* Full screen height before and after parallax */
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}

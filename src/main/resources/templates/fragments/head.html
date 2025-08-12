@@ -1,0 +1,66 @@
+
+<div th:fragment="head">
+
+	<div class="container-fluid top-bar">
+		<div class="bg-dark text-light row" >
+			<div class="justify-content-center col">
+				<a class="bi bi-instagram" href="https://instagram.com" target="_blank" rel="noopener noreferrer"></a>
+				<a class="bi bi-facebook" href="https://facebook.com" target="_blank" rel="noopener noreferrer"></a>
+			</div>
+
+			<div class="justify-content-center col">
+				<i class="bi bi-telephone-fill me-2"></i>
+				<span>088242422</span>
+				<i class="bi bi-envelope-fill ms-3 me-2"></i>
+				<span>testmail@gmail.com</span>
+			</div>
+
+
+			<div class="dropdown col-auto ms-auto">
+				<button class="btn btn-dark btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					🌐
+				</button>
+				<ul class="dropdown-menu dropdown-menu-end">
+					<li><a class="dropdown-item" href="?lang=bg">🇧🇬 Български</a></li>
+					<li><a class="dropdown-item" href="?lang=ru">🇷🇺 Русский</a></li>
+					<li><a class="dropdown-item" href="?lang=en">🇬🇧 English</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav nav-underline align-items-center">
+
+					<li class="nav-item">
+						<a class="nav-link" href="/" th:text="#{home}">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/services" th:text="#{services}">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/region" th:text="#{region}">Region</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/prices" th:text="#{prices}">Prices</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/gallery" th:text="#{gallery}">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/contacts" th:text="#{contacts}">Contacts</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+</div>

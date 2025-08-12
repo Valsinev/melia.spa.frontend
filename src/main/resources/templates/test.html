@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bootstrap Parallax Reveal</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+		/* Parallax section styling */
+		.parallax {
+		  background-image: url('https://www.rpskypool.com/assets/images/services/tiles-pool-chemicals.jpg'); /* Replace with your own */
+		  min-height: 500px;
+		  background-attachment: fixed;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+
+		/* To make the "reveal" feel stronger */
+		.spacer {
+		  min-height: 100vh; /* Full screen height before and after parallax */
+		}
+
+		.overlay {
+		  background: rgba(0, 0, 0, 0.4);
+		  min-height: 500px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  color: white;
+		  text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+<!-- Top section (before reveal) -->
+<div class="container spacer d-flex align-items-center justify-content-center">
+	<div>
+		<h1>Welcome</h1>
+		<p>Scroll down to reveal the hidden background.</p>
+	</div>
+</div>
+
+<!-- Parallax reveal section -->
+<div class="parallax">
+	<div class="overlay">
+		<h2>This is the hidden image revealed!</h2>
+	</div>
+</div>
+
+<!-- Bottom section -->
+<div class="container spacer d-flex align-items-center justify-content-center">
+	<div>
+		<h1>After the Reveal</h1>
+		<p>Keep scrolling for more content.</p>
+	</div>
+</div>
+
+</body>
+</html>

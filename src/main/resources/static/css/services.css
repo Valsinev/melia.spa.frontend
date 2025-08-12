@@ -1,0 +1,8 @@
+.card-img-top {
+    height: 200px;      /* or whatever works */
+    object-fit: cover;  /* crop rather than stretch */
+}
+
+.main-content {
+    margin-top: 3rem;
+}

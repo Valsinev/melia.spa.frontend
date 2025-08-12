@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<title th:text="#{services}">Services</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<link rel="stylesheet" th:href="@{/css/services.css}">
+	<link rel="stylesheet" th:href="@{/css/default.css}">
+
+</head>
+<body>
+
+<section th:replace="~{fragments/head::head}"></section>
+
+<section class="main-content">
+	<div class="container">
+		<div class="row g-3 align-items-stretch">
+			<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+				<div class="card h-100" style="width: 15rem;">
+					<img src="/img/construction.card.image.webp" class="card-img-top" alt="...">
+					<div class="card-body">
+						<a href="/services/construction" class="" th:text="#{construction.of.swimming.pools}">Construction of swimming pools</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+				<div class="card h-100" style="width: 15rem;">
+					<img src="/img/filter.room.card.image.webp" class="card-img-top" alt="...">
+					<div class="card-body">
+						<a href="/services/filter-room" class="" th:text="#{filter.room.building}"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+				<div class="card h-100" style="width: 15rem;">
+					<img src="/img/routing.watercourses.card.image.jpeg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<a href="/services/routing-watercourses" class="" th:text="#{routing.of.watercourses}"></a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+				<div class="card h-100" style="width: 15rem;">
+					<img src="/img/pool.repair.card.image.webp" class="card-img-top" alt="...">
+					<div class="card-body">
+						<a href="/services/pool-repair" class="" th:text="#{pool.repair}"></a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+				<div class="card h-100" style="width: 15rem;">
+					<img src="/img/pool.maintenance.card.image.webp" class="card-img-top" alt="...">
+					<div class="card-body">
+						<a href="/services/pool-maintenance" class="" th:text="#{pool.maintenance}"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+		crossorigin="anonymous"></script>
+</body>
+</html>

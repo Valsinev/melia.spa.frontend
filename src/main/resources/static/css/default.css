@@ -11,3 +11,4 @@ body {
   z-index: 1030; /* Bootstrap navbar uses 1030, so this is good */
   background-color: #212529; /* same as bg-dark */
 }
+

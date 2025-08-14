@@ -1,5 +1,6 @@
 package com.melia.spa.controller;
 
+import com.melia.spa.service.GalleryService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,27 +17,20 @@ public class GalleryController {
 
 	@Value("${constructed.pools.folder}")
 	private String photosFolder;
+	private final GalleryService galleryService;
+
+	public GalleryController(GalleryService galleryService) {
+		this.galleryService = galleryService;
+	}
 
 	@GetMapping
 	public String getGalleryPage(Model model) {
 
-		File folder = new File(photosFolder.replace("file:", ""));
-		List<String> imageNames = new ArrayList<>();
+		List<String> imageNames = galleryService.getImagesFromDirectory(photosFolder);
 
-		if (folder.exists() && folder.isDirectory()) {
-			for (File file : folder.listFiles()) {
-				if (file.isFile() && isImage(file.getName())) {
-					imageNames.add(file.getName());
-				}
-			}
-		}
 		model.addAttribute("imageNames", imageNames);
 
 		return "gallery";
-	}
-
-	private boolean isImage(String name) {
-		return name.matches(".*\\.(jpg|jpeg|png|gif|webp)$");
 	}
 
 }

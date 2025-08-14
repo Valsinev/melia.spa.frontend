@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 
-<!--	<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<!--	<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 	<title th:text="#{home}">Home</title>
@@ -12,38 +12,45 @@
 		  integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 	<link rel="stylesheet" th:href="@{/css/index.css}">
 	<link rel="stylesheet" th:href="@{/css/default.css}">
+	<link rel="stylesheet" th:href="@{/css/gallery.css}">
+	<link rel="stylesheet" th:href="@{/css/contact.css}">
+	<link rel="stylesheet" th:href="@{/css/footer.css}">
 
 </head>
 <body>
 
-<section th:replace="~{fragments/head::head}"></section>
+<header th:replace="~{fragments/head::head}"></header>
 
-<section class="main-content">
+<div class="main-content">
 
-	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+	<section id="carouselExampleIndicators" class="hero-section carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+					class="active"></button>
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
 		</div>
 
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img class="d-block w-100" src="https://nuviewoutdoor.com/wp-content/uploads/2023/05/Amy-8.jpg" alt="First slide">
+				<img class="d-block w-100" src="https://nuviewoutdoor.com/wp-content/uploads/2023/05/Amy-8.jpg"
+					 alt="First slide">
 				<div class="carousel-caption d-none d-md-block">
 					<h5>...</h5>
 					<p>...</p>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="https://i.ytimg.com/vi/J8ELms5IeG0/maxresdefault.jpg" alt="Second slide">
+				<img class="d-block w-100" src="https://i.ytimg.com/vi/J8ELms5IeG0/maxresdefault.jpg"
+					 alt="Second slide">
 				<div class="carousel-caption d-none d-md-block">
 					<h5>...</h5>
 					<p>...</p>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="https://www.aquapool.com/wp-content/uploads/2023/11/Pool-Maintenance.png" alt="Third slide">
+				<img class="d-block w-100"
+					 src="https://www.aquapool.com/wp-content/uploads/2023/11/Pool-Maintenance.png" alt="Third slide">
 				<div class="carousel-caption d-none d-md-block">
 					<h5>...</h5>
 					<p>...</p>
@@ -51,41 +58,262 @@
 			</div>
 		</div>
 
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+				data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+				data-bs-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 		</button>
-	</div>
+	</section>
 
-
-
-	<!-- Top section (before reveal) -->
-	<div class="container spacer d-flex align-items-center justify-content-center">
-		<div>
-			<h1>Welcome</h1>
-			<p>Scroll down to reveal the hidden background.</p>
+	<section class="about container">
+		<div class="row">
+			<h1>Award-Winning, Bespoke-Built Swimming Pools and Thermal Wellness Rooms</h1>
+			<p>
+				With over 30 years’ experience, every pool, spa, sauna and steam room we build is a dedication to detail
+				and quality meticulously tailored to you, your client, your property and your lifestyle. Whether it’s an
+				indoor or outdoor swimming pool for the home or a commercial pool and wellness space for your discerning
+				clients, our award-winning swimming pool builders and thermal room design & build specialists provide
+				outstanding, unmatched designs and solutions to meet every desire.
+			</p>
 		</div>
-	</div>
+	</section>
 
+	<section class="services container-fluid">
 
-	<!-- Parallax reveal section -->
-	<div class="parallax">
-		<div class="overlay">
-			<h2>This is the hidden image revealed!</h2>
+		<div class="row g-3 align-items-stretch">
+
+			<div class=" col-4">
+				<div class="card service-type h-100">
+					<a href="/service/construction" class="service-link">
+						<img class="service-img" src="/img/construction-img.png" alt="Card image cap">
+					</a>
+
+					<div class="card-body">
+						<h3>Construcion of a swimming pool</h3>
+						<p>From the project to the first bath. We build a perfect swimming pools in
+							all dimensions adapted to your needs and wishes.</p>
+					</div>
+				</div>
+			</div>
+			<div class=" col-4">
+				<div class="card service-type h-100">
+					<a href="/service/maintenance" class="service-link">
+						<img class="service-img" src="/img/maintenance.png" alt="Card image cap">
+					</a>
+					<div class="card-body">
+						<h3>Pool maintenance</h3>
+						<p>Enjoy your pool without worries with our maintenance service. Cleaning,
+							maintenance, servicing of pools and equipment during the year.</p>
+					</div>
+				</div>
+			</div>
+			<div class=" col-4">
+				<div class="card service-type h-100">
+					<a href="/service/equipment" class="service-link">
+						<img class="service-img" src="/img/equipment-img.png" alt="Card image cap">
+					</a>
+					<div class="card-body">
+						<h3>Equipment for swimming pools</h3>
+						<p>Everything for the pool in one place. Chemistry, pumps, purifiers and more.
+							Everything with a delivery to the location.</p>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
+	</section>
 
+	<section class="container">
+		<div class="row pool-type-section">
+			<h1>Choose the type of pool</h1>
+			<p>Enrich your space with an elegant skimmer pool, a luxurious infinity pool and the ultimate wellness
+				experience – luxurious jacuzzi tubs.</p>
+			<p>Invest in your home, apartment, hotel or villa and create your own paradise on earth. Indulge in luxury
+				and comfort that will further enrich your experience in a private environment</p>
 
-	<!-- Bottom section -->
-	<div class="container spacer d-flex align-items-center justify-content-center">
-		<div>
-			<h1>After the Reveal</h1>
-			<p>Keep scrolling for more content.</p>
+			<div class="col-4 pool-type">
+
+				<a href="/pools/infinity" class="">
+					<div class="card bg-dark text-white">
+						<img class="card-img" src="/img/infinity-swimming-pool.jpg" alt="Card image">
+						<div class="card-img-overlay">
+							<h5 class="card-title">Infinity Pools</h5>
+						</div>
+					</div>
+				</a>
+
+			</div>
+			<div class="col-4 pool-type">
+				<a href="/pools/skimmer" class="">
+					<div class="card bg-dark text-white">
+						<img class="card-img" src="/img/skimmer-swimming-pool.jpg" alt="Card image">
+						<div class="card-img-overlay">
+							<h5 class="card-title">Skimmer Pools</h5>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-4 pool-type">
+				<a href="/pools/jacuzzi" class="">
+					<div class="card bg-dark text-white">
+						<img class="card-img" src="/img/jacuzzi-swimming-pool.jpg" alt="Card image">
+						<div class="card-img-overlay">
+							<h5 class="card-title" th:text="#{jacuzzi}">Jacuzzi</h5>
+						</div>
+					</div>
+				</a>
+			</div>
 		</div>
-	</div>
-</section>
+
+	</section>
+
+	<section class="accessories-section container">
+		<h1>Accessories for the perfect pool</h1>
+		<p>Enhance your enjoyment with exclusive pool equipment.</p>
+		<p> Innovations such as water electrolysis, hydromassage and smart control systems provide the ultimate pool
+			experience.</p>
+		<p>LED lighting further enriches the ambiance, while the automatic cleaning system keeps the water crystal
+			clear.</p>
+
+
+		<div class="row g-3 align-items-stretch accessories-wrapper">
+
+			<div class=" col-xl-3 col-lg-4 col-md-6 col-sm-6">
+				<div class="card accessories-type h-100">
+					<img class="accessories-img" src="/img/index/electrolysis.png" alt="Card image cap">
+
+					<div class="card-body">
+						<h3>Electrolysis of water</h3>
+						<p>The device transforms salt into disinfectant for safe and effective pool cleaning,
+							providing a safe and healthy swimming experience.</p>
+					</div>
+				</div>
+			</div>
+			<div class=" col-xl-3 col-lg-4 col-md-6 col-sm-6">
+				<div class="card accessories-type h-100">
+					<img class="accessories-img" src="/img/index/waterfall.png" alt="Card image cap">
+
+					<div class="card-body">
+						<h3>Waterfall</h3>
+						<p>An elegant waterfall for aesthetics and relaxing sound, adding natural
+							beauty and tranquility to your pool.</p>
+					</div>
+				</div>
+			</div>
+			<div class=" col-xl-3 col-lg-4 col-md-6 col-sm-6">
+				<div class="card accessories-type h-100">
+					<img class="accessories-img" src="/img/index/heating-pump.png" alt="Card image cap">
+
+					<div class="card-body">
+						<h3>Heat pump</h3>
+						<p>Use the energy of the environment for a comfortable water temperature, enabling year-round
+							enjoyment
+							with minimal energy consumption.</p>
+					</div>
+				</div>
+			</div>
+			<div class=" col-xl-3 col-lg-4 col-md-6 col-sm-6">
+				<div class="card accessories-type h-100">
+					<img class="accessories-img" src="/img/index/hydro-massage.png" alt="Card image cap">
+
+					<div class="card-body">
+						<h3>Hydromassage</h3>
+						<p>Feel the luxury of hydromassage for muscle relaxation and circulation, providing exceptional
+							enjoyment in your pool.</p>
+					</div>
+				</div>
+			</div>
+			<div class=" col-xl-3 col-lg-4 col-md-6 col-sm-6">
+				<div class="card accessories-type h-100">
+					<img class="accessories-img" src="/img/index/air-geysers.png" alt="Card image cap">
+
+					<div class="card-body">
+						<h3>Air geysers</h3>
+						<p>Enjoy the feeling of an underwater air massage, promoting relaxation and improving
+							circulation in the pool.</p>
+					</div>
+				</div>
+			</div>
+			<div class=" col-xl-3 col-lg-4 col-md-6 col-sm-6">
+				<div class="card accessories-type h-100">
+					<img class="accessories-img" src="/img/index/cleaning.png" alt="Card image cap">
+
+					<div class="card-body">
+						<h3>Automatic pool cleaner</h3>
+						<p>Keep your pool clean effortlessly with automatic cleaners, removing debris and keeping it
+							ready to enjoy.</p>
+					</div>
+				</div>
+			</div>
+			<div class=" col-xl-3 col-lg-4 col-md-6 col-sm-6">
+				<div class="card accessories-type h-100">
+					<img class="accessories-img" src="/img/index/chlorine-dispenser.png" alt="Card image cap">
+
+					<div class="card-body">
+						<h3>Chlorine dispenser</h3>
+						<p>It automatically regulates the chlorine level, maintaining a safe and clean pool environment
+							without regular adjustments.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="parallax-section">
+		<!-- Parallax reveal section -->
+		<div class="parallax">
+			<div class="overlay">
+				<h2>Turn your home into a luxury oasis and increase the value of your property</h2>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="portfolio-section container">
+		<div class="row">
+			<h1>Why Choose Topline?</h1>
+			<h5>Whether your project is big or small, we can help with every step of the process, guiding you through
+				the decisions you’ll need to consider and offering solutions tailored to your specific desires to
+				complete or refurbish your dream pool or thermal wellness space.</h5>
+			<p>It’s this combination that gives our clients the confidence to trust us with their most demanding
+				projects and peace of mind that everything is backed up by exceptional technical support and after-sales
+				service.</p>
+		</div>
+
+		<div class="featured-projects row">
+			<h1>Featured Projects:</h1>
+			<div class="custom-card">
+				<div class="card-body">
+					<div class="container-fluid">
+						<div class="row">
+
+							<div class="col-4 mt-3 mb-3" th:each="image : ${imageNames}">
+								<img th:src="@{'/gallery/' + ${image}}" class="img equal-img" alt="..."
+									 onclick="openModal(this.src)">
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pre-contact-section container">
+		<div class="row">
+			<h1>Ready to take the plunge?</h1>
+			<h5>Your project deserves expert hands. Let's discuss how we can help you with your swimming pool, spa or
+				wellness project...</h5>
+		</div>
+	</section>
+
+	<section th:replace="~{fragments/contact::contact}"></section>
+
+</div>
+
+<footer th:replace="~{fragments/foot::foot}"></footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

@@ -1,0 +1,95 @@
+<section class="contacts-section container " th:fragment="contact">
+
+	<h1>Contact us</h1>
+
+	<div class="container-fluid address-and-contactForm">
+		<div class="row">
+			<div class="col-4 offices pt-2">
+				<h4 class="text-light">Locations</h4>
+				<hr>
+				<b>Burgas office:</b>
+				<p class="text-light">гр. Бургас, Пробуда, 85, вх. Б, ет. 1</p>
+				<p class="text-light">088242422</p>
+				<p class="text-light">testmail@gmail.com</p>
+			</div>
+			<div class="col-8">
+				<form>
+					<div class="form-group row mt-2">
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="name" placeholder="Name">
+						</div>
+					</div>
+					<div class="form-group row mt-2">
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="address" placeholder="Address">
+						</div>
+					</div>
+					<div class="form-group row mt-2">
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="email" placeholder="Email">
+						</div>
+					</div>
+					<div class="form-group row mt-2">
+						<div class="col-sm-10">
+							<input type="number" class="form-control" id="telephone" placeholder="Telephone">
+						</div>
+					</div>
+					<div class="form-group row mt-2">
+						<div class="col-sm-10">
+							<textarea class="form-control" id="message" placeholder="Message" rows="4"></textarea>
+						</div>
+					</div>
+					<fieldset class="form-group mt-2">
+						<h5 class="col-form-label">How did you hear about us?</h5>
+
+						<div class="row">
+							<div class="col-6">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="searchEngine"
+										   value="searchEngine">
+									<label class="form-check-label" for="searchEngine">
+										Search engine
+									</label>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios"
+										   id="recommendation" value="recommendation">
+									<label class="form-check-label" for="recommendation">
+										Recommendation
+									</label>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="socialMedia"
+										   value="socialMedia">
+									<label class="form-check-label" for="socialMedia">
+										Social media
+									</label>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="other"
+										   value="other">
+									<label class="form-check-label" for="other">
+										Other
+									</label>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<div class="form-group row">
+						<div class="col-sm-10">
+							<button type="submit" class="btn btn-dark">Send</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+</section>

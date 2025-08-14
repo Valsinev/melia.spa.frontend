@@ -1,0 +1,18 @@
+
+.footer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #1d2934;
+  color: white;
+  text-align: left;
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit; /* so they use the same color as your text */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* optional hover effect */
+}

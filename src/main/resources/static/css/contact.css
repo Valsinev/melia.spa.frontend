@@ -1,0 +1,24 @@
+
+.pre-contact-section {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.contacts-section {
+  margin-bottom: 5rem;
+}
+
+.contacts-section h1 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.address-and-contactForm .offices {
+  background-color: #019887;
+}
+
+.contacts-section .btn {
+  border-radius: 0;
+  background-color: #1d2934;
+}
+

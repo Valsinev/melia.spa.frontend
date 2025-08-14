@@ -30,9 +30,17 @@
 
 	</div>
 
+
+
 	<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
-		<div class="container">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+
+
+		<div class="container d-flex align-items-center">
+
+			<a href="/" class="navbar-brand">
+				<img src="/img/logo.png" width="200" height="150" class="d-inline-block align-top logo" alt="Logo">
+			</a>
+			<button class="navbar-toggler   ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -41,22 +49,22 @@
 				<ul class="navbar-nav nav-underline align-items-center">
 
 					<li class="nav-item">
-						<a class="nav-link" href="/" th:text="#{home}">Home</a>
+						<a class="nav-link" href="/about" th:text="#{about.us}">About us</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="/services" th:text="#{services}">Services</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/region" th:text="#{region}">Region</a>
+						<a class="nav-link" href="/coverage" th:text="#{coverage}">Coverage</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/prices" th:text="#{prices}">Prices</a>
+						<a class="nav-link" href="/blog" th:text="#{blog}">Blog</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="/gallery" th:text="#{gallery}">Gallery</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/contacts" th:text="#{contacts}">Contacts</a>
+						<a class="nav-link" href="/contact" th:text="#{contacts}">Contacts</a>
 					</li>
 				</ul>
 

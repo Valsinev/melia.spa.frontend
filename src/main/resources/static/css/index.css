@@ -44,6 +44,12 @@
 
 .services {
   margin-top: 5rem;
+  height: 40rem;
+
+  background-color: #1d2934;
+  color: white;
+  padding: 10rem 0;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
 
 .service-img {
@@ -52,6 +58,8 @@
 }
 
 .service-type {
+  background-color: #1d2934;
+  color: white;
   text-align: center;
   border: none;
   border-radius: 0;

@@ -1,53 +1,53 @@
 <section class="contacts-section container " th:fragment="contact">
 
-	<h1>Contact us</h1>
+	<h1 th:text="#{contact.us}">Contact us</h1>
 
 	<div class="container-fluid address-and-contactForm">
 		<div class="row">
 			<div class="col-4 offices pt-2">
-				<h4 class="text-light">Locations</h4>
+				<h4 class="text-light" th:text="#{locations}">Locations</h4>
 				<hr>
-				<b>Burgas office:</b>
-				<p class="text-light">гр. Бургас, Пробуда, 85, вх. Б, ет. 1</p>
-				<p class="text-light">088242422</p>
-				<p class="text-light">testmail@gmail.com</p>
+				<b th:text="#{burgas.office}">Burgas office:</b>
+				<p class="text-light" th:text="#{contact.address}">гр. Бургас, Пробуда, 85, вх. Б, ет. 1</p>
+				<p class="text-light" th:text="#{company.phone}">088242422</p>
+				<p class="text-light" th:text="#{company.email}">testmail@gmail.com</p>
 			</div>
 			<div class="col-8">
 				<form>
 					<div class="form-group row mt-2">
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="name" placeholder="Name">
+							<input type="text" class="form-control" id="name" th:placeholder="#{name}">
 						</div>
 					</div>
 					<div class="form-group row mt-2">
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="address" placeholder="Address">
+							<input type="text" class="form-control" id="address" th:placeholder="#{address}">
 						</div>
 					</div>
 					<div class="form-group row mt-2">
 						<div class="col-sm-10">
-							<input type="email" class="form-control" id="email" placeholder="Email">
+							<input type="email" class="form-control" id="email" th:placeholder="#{email}">
 						</div>
 					</div>
 					<div class="form-group row mt-2">
 						<div class="col-sm-10">
-							<input type="number" class="form-control" id="telephone" placeholder="Telephone">
+							<input type="number" class="form-control" id="telephone" th:placeholder="#{telephone}">
 						</div>
 					</div>
 					<div class="form-group row mt-2">
 						<div class="col-sm-10">
-							<textarea class="form-control" id="message" placeholder="Message" rows="4"></textarea>
+							<textarea class="form-control" id="message" th:placeholder="#{message}" rows="4"></textarea>
 						</div>
 					</div>
 					<fieldset class="form-group mt-2">
-						<h5 class="col-form-label">How did you hear about us?</h5>
+						<h5 class="col-form-label" th:text="#{how.did.you.hear.about.us}">How did you hear about us?</h5>
 
 						<div class="row">
 							<div class="col-6">
 								<div class="form-check">
 									<input class="form-check-input" type="radio" name="gridRadios" id="searchEngine"
 										   value="searchEngine">
-									<label class="form-check-label" for="searchEngine">
+									<label class="form-check-label" for="searchEngine" th:text="#{search.engine}">
 										Search engine
 									</label>
 								</div>
@@ -56,7 +56,7 @@
 								<div class="form-check">
 									<input class="form-check-input" type="radio" name="gridRadios"
 										   id="recommendation" value="recommendation">
-									<label class="form-check-label" for="recommendation">
+									<label class="form-check-label" for="recommendation" th:text="#{recommendation}">
 										Recommendation
 									</label>
 								</div>
@@ -65,7 +65,7 @@
 								<div class="form-check">
 									<input class="form-check-input" type="radio" name="gridRadios" id="socialMedia"
 										   value="socialMedia">
-									<label class="form-check-label" for="socialMedia">
+									<label class="form-check-label" for="socialMedia" th:text="#{social.media}">
 										Social media
 									</label>
 								</div>
@@ -74,7 +74,7 @@
 								<div class="form-check">
 									<input class="form-check-input" type="radio" name="gridRadios" id="other"
 										   value="other">
-									<label class="form-check-label" for="other">
+									<label class="form-check-label" for="other" th:text="#{other}">
 										Other
 									</label>
 								</div>
@@ -83,7 +83,7 @@
 					</fieldset>
 					<div class="form-group row">
 						<div class="col-sm-10">
-							<button type="submit" class="btn btn-dark">Send</button>
+							<button type="submit" class="btn btn-dark" th:text="#{send}">Send</button>
 						</div>
 					</div>
 				</form>
